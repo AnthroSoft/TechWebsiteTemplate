@@ -1,0 +1,328 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  overflow-x: hidden;
+  background: white;
+}
+@font-face {
+  font-family: moonfont;
+  src: url(fonts/moonfont.otf);
+}
+nav {
+  display: block;
+  height: 72px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  border-bottom: 5px solid rgb(93, 93, 93);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(149, 142, 147) 35%, rgb(85, 81, 93) 50%);
+}
+nav img {
+  height: 70%;
+  padding: 11px 20px;
+  float: left;
+}
+.buttons {
+  position: relative;
+  float: right;
+}
+.buttons button {
+  position: relative;
+  float: left;
+  right: 0px;
+  height: 100%;
+  width: 200px;
+  border: none;
+  border-left: 1px solid rgb(255, 255, 255);
+  background-color: rgb(85, 81, 93);
+  transition-duration: 0.5s;
+  text-align: center;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: Calibri;
+  color: white;
+  vertical-align: middle;
+}
+nav button:hover {
+  cursor: pointer;
+  background-color: rgb(150, 150, 182);
+  box-shadow: -1px 0px 4px black;
+}
+.header {
+  height: 600px;
+   background-image: url("https://cdn.discordapp.com/attachments/991608609429536788/1006953111312674826/photo-1461749280684-dccba630e2f6.png");
+  background-size: cover, cover;
+  background-repeat:no-repeat, no-repeat;
+  background-position: center center, center center; 
+  position: relative;
+}
+.header img {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  border-radius: 0% 0% 0% 0%;
+  transform: scaleX(1.25);
+  border-bottom: 2px solid black;
+}
+.header h1 {
+  position: relative;
+  color: white;
+  font-family: moonfont;
+  font-size: 90px;
+  vertical-align: middle;
+  text-align: center;
+  top: 200px;
+  letter-spacing: 5px;
+}
+.header h2 {
+  position: relative;
+  color: #ffffff;
+  font-family: moonfont;
+  font-size: 50px;
+  vertical-align: middle;
+  text-align: center;
+  top: 250px;
+  letter-spacing: 5px;
+}
+.info-grid {
+  border-top: 5px solid rgb(29, 27, 27);
+  padding: 50px 10px 100px 10px;
+  background: rgb(116, 125, 139);
+  background: linear-gradient(to bottom, rgb(116, 125, 139) 25%, rgb(37, 35, 41) 100%);
+  display: grid;
+  height: 400px;
+  grid-column-gap: 10px;
+  grid-row-gap: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    'x y z z';
+}
+.box1, .box2, .box3{
+  position: relative;
+  display: block;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 2px 2px 4px black;
+  background: white;
+}
+.box1 {
+  grid-area: x;
+  justify-content: space-around;
+  align-content: center;
+  margin: 10px;
+}
+.box1 img {
+  position: relative;
+  top: 10px;
+  margin: auto;
+  width: 60%;
+  left: 20%;
+  height: 140px;
+}
+.box1 p {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  font-family: moonfont;
+  font-size: 16px;
+  vertical-align: middle;
+  max-width: 80%;
+  margin: auto;
+  line-height: 30px;
+}
+.box1 h3 {
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Calibri;
+  font-weight: 500;
+}
+.box2 {
+  grid-area: y;
+  justify-content: space-around;
+  align-content: center;
+}
+.box2 img {
+  position: relative;
+  top: 10px;
+  margin: auto;
+  width: 50%;
+  left: 25%;
+  height: 140px;
+}
+.box2 p {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  font-family: moonfont;
+  font-size: 16px;
+  vertical-align: middle;
+  max-width: 80%;
+  margin: auto;
+  line-height: 30px;
+}
+.box2 h3 {
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Calibri;
+  font-weight: 500;
+}
+.box3 {
+  grid-area: z;
+  align-content: center;
+  margin: 10px;
+}
+.box3 h3 {
+  position: relative;
+  top: 50px;
+  font-size: 36px;
+  text-align: center;
+  font-family: Calibri;
+  font-weight: 500;
+}
+.box3 p {
+  position: relative;
+  top: 120px;
+  text-align: center;
+  font-family: moonfont;
+  font-size: 20px;
+  vertical-align: middle;
+  max-width: 80%;
+  margin: auto;
+  line-height: 30px;
+}
+.img-grid {
+  border-top: 5px solid rgb(29, 27, 27);
+  padding: 50px 20px 100px 10px;
+  height: 450px;
+  background: rgba(0, 77, 202, 1);
+  background: linear-gradient(to bottom, rgb(116, 125, 139) 50%, rgb(37, 35, 41) 100%);
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: 
+    'a b';
+}
+.box4, .box5 {
+  position: relative;
+  display: block;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 2px 2px 4px black;
+  background: white;
+  width: 100%;
+  height: 450px;
+}
+.box4 {
+  grid-area: a;
+  align-content: center;
+  justify-content: space-around;
+  font-family: moonfont;
+  text-align: center;
+}
+.box4 h3 {
+  position: relative;
+  top: 65px;
+  font-family: Calibri;
+  font-weight: 500;
+  font-size: 36px;
+}
+.box4 p {
+  position: relative;
+  top: 100px;
+  font-size: 20px;
+  margin: 20px 20px;
+}
+.box5 {
+  grid-area: b;
+}
+.bottom-footer {
+  background: rgb(20, 4, 48);
+  border-top: 5px solid rgb(29, 27, 27);
+  height: 100px;
+  font-family: moonfont;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+.about-grid {
+  padding: 50px 20px 100px 10px;
+  height: 450px;
+  background-image: url("https://images.pond5.com/computer-coding-background-footage-090890180_prevstill.jpeg");
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: 
+    'a b';
+}
+.about {
+  position: relative;
+  display: block;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 2px 2px 4px black;
+  background: white;
+  width: 100%;
+  height: 450px;
+}
+.about {
+  grid-area: a;
+  align-content: center;
+  justify-content: space-around;
+}
+.about h3 {
+  font-family: Calibri;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+}
+.about p {
+  position: relative;
+  font-family: moonfont;
+  top: 65px;
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 20px;
+}
+@media screen and (max-width: 936) {
+
+  .buttons button {
+    position: relative;
+    display: none;
+  }
+  .info-grid {
+    display: grid;
+    height: 1600px;
+    grid-row-gap: 100px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      'x' 'y' 'z' 'z';
+  }
+  .box1, .box2, .box3{
+    position: relative;
+    display: block;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px;
+    box-shadow: 2px 2px 4px black;
+    background: white;
+  }
+}
